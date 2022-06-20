@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    height: 110vh;
+    font-family: "Ariel", sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.continer {
+    width: 1100px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 10px;
+    color: #5f6368;
+}
+
+h2 {
+    text-align: center;
+}
+
+.site-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.malumoti-imput, .malumoti, .hudud {
+    width: 450px;
+    height: 42px;
+    display: block;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+}
+
+.malumoti-label {
+    font-size: 15px;
+}
+
+.jins {
+    width: 450px;
+    height: 66px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5%;
+    
+}
+
+.jinsi, .holati {
+    padding-right: 50px;
+}
+
+.tillar {
+    width: 450px;
+    height: 42px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+    margin: 25px 0; 
+}
+
+.til {
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+.fayl {
+    width: 450px;
+    height: 42px;
+    display: block;
+    border: none;
+    margin: 20px 0;
+}
+
+
+.ikkinchi  {
+    margin-top: 33px;
+}
+
+
+textarea {
+    resize: none;
+    width: 450px;
+    height: 187px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
+}
+
+button {
+    width: 450px;
+    height: 42px;
+    display: block;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px; 
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #5f6368;
+    color: white;
+}
+

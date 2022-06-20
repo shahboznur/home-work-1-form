@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratsion</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="continer">
+        <h2>Registratsiya</h2>
+        <form class="site-form" action="https://echo.htmlacademy.ru" method="POST">
+            <div>
+                <label class="malumoti-label" for="ism">Ismingizni kiriting:</label>
+                <input class="malumoti-imput" type="text" name="ism" id="ism"> <!--required-->
+                
+                <label class="malumoti-label" for="familiya">Familiyangizni kiriting:</label>
+                <input class="malumoti-imput" type="text" name="familiya" id="familiya">
+                
+                <label class="malumoti-label" for="yosh">Yoshingizni kiriting:</label>
+                <input class="malumoti-imput" type="number" name="yosh" id="yosh" min="18" max="60">
+                
+                <label class="malumoti-label" for="email">Emailingizni kiriting:</label>
+                <input class="malumoti-imput" type="email" name="email" id="email">
+                
+                <label class="malumoti-label" for="tel">Telefon raqamingizni kiriting:</label>
+                <input class="malumoti-imput" type="tel" name="tel_nomir" id="tel">
+                
+                <fieldset class="jins">
+                    <legend>Jinsingizni tanlang:</legend>
+                    <span class="jinsi">
+                        <input type="radio" name="type" value="erkak" id="erkak">
+                        <label for="erkak">Erkak</label>
+                    </span>
+                    <span class="jinsi">
+                        <input type="radio" name="type" value="ayol" id="ayol">
+                        <label for="ayol">Ayol</label>
+                    </span>
+                </fieldset>
+
+                <fieldset class="jins">
+                    <legend>Oilaviy ahvolingiz:</legend>
+                    <span class="holati">
+                        <input type="radio" name="ahvoli" value="boydoq" id="holati">
+                        <label for="holati">Bo'ydoq</label>
+                    </span>
+                    <span class="holati">
+                        <input type="radio" name="ahvoli" value="oilali" id="holati">
+                        <label for="holati">Oilali</label>
+                    </span>
+                </fieldset>
+            </div>
+
+            <div class="ikkinchi">
+                <select class="malumoti" name="malumoti">
+                    <option selected hidden>Malumotingiz:</option>
+                    <option value="orta">O'rta</option>
+                    <option value="orta maxsus">O'rta maxsus</option>
+                    <option value="oliy">Oliy</option>
+                </select>
+    
+                <fieldset class="tillar">
+                    <span class="til">
+                        <label><input type="checkbox" name="tili" value="eng">ENG</label>
+                    </span>
+                    <span class="til">
+                        <label><input type="checkbox" name="tili" value="rus">RUS</label>
+                    </span>
+                    <span class="til">
+                        <label><input type="checkbox" name="tili" value="uzb">UZB</label>
+                    </span>
+                </fieldset>
+                    
+
+                <label  for="hudud">Hududingizni tanlang:</label>
+                <input class="hudud" id="hudud" list="hududlar" type="text" autocomplete="off">
+                <datalist  id="hududlar" >
+                  <option value="Toshkent shahri"></option>
+                  <option value="Qoraqalpoqiston respublikasi"></option>
+                  <option value="Andijon viloyati"></option>
+                  <option value="Farg'ona viloyati"></option>
+                  <option value="Namangan viloyati"></option>
+                  <option value="Toshkent viloyati"></option>
+                  <option value="Sirdaryo viloyati"></option>
+                  <option value="Jizzax viloyati"></option>
+                  <option value="Samarqand viloyati"></option>
+                  <option value="Qashqadaryo viloyati"></option>
+                  <option value="Surxandaryo viloyati"></option>
+                  <option value="Navoiy viloyati"></option>
+                  <option value="Buxoro viloyati"></option>
+                  <option value="Xorazim viloyati"></option>
+                </datalist>
+
+                <input class="fayl" type="file" name="passport" id="passport">
+                <textarea name="about" id="haqida" placeholder=" O'zingiz haqingizda:"></textarea>
+                <button type="submit">Yuborish</button>
+            </div>
+          </form>
+    </div>
+</body>
+</html>
